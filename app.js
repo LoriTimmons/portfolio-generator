@@ -142,11 +142,11 @@ promptUser()
   .then((portfolioData) => {
   const pageHTML = generatePage(portfolioData);
 
-// fs.writeFile('index.html', pageHTML, err => {
-//   if (err) throw err;
+fs.writeFile('index.html', pageHTML, err => {
+  if (err) throw err;
 
-//   console.log('Portfolio complete! Check out index.html to see the output!');
-// });
+  console.log('Portfolio complete! Check out index.html to see the output!');
+});
   });
 
 // Input functionally
@@ -166,4 +166,4 @@ promptUser()
 
 //   printProfileData(profileDataArgs);
 
-//   9..5. promptProject()
+//   9.4.6 Map
